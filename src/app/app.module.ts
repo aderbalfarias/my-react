@@ -7,13 +7,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { SettingsService } from './services/settings.service';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavbarComponent,
         SettingsComponent,
-        DashboardComponent
+        DashboardComponent,
+        HomeComponent
     ],
     imports: [
         BrowserModule,
