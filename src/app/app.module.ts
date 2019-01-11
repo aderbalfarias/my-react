@@ -8,16 +8,16 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { SettingsService } from './services/settings.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    SettingsComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [SettingsService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NavbarComponent,
+        SettingsComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule
+    ],
+    providers: [SettingsService],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,6 +7,7 @@ import { SettingsService } from '../../services/settings.service';
     templateUrl: './navbar.component.html',
     styleUrls: ['./navbar.component.css']
 })
+
 export class NavbarComponent implements OnInit {
     isLoggedIn: boolean;
     loggedInUser: string;
