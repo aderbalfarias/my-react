@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { SettingsComponent } from './components/settings/settings.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 const routes: Routes = [
-    //{ path: '', component: DashboardComponent },
+    { path: '', component: DashboardComponent },
     //{ path: 'login', component: LoginComponent },
     { path: 'settings', component: SettingsComponent },
     //{ path: '**', component: DashboardComponent }
@@ -17,4 +18,5 @@ const routes: Routes = [
     ],
     providers: []
 })
+
 export class AppRoutingModule { }
