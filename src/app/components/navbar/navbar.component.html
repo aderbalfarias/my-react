@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse" id="navbarMain">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-            <a routerLink="/" class="nav-link">Dashboard</a>
+            <a routerLink="/" class="nav-link">Home</a>
             </li>
         </ul>
 
@@ -20,6 +20,9 @@
             </li> -->
             <li *ngIf="isLoggedIn" class="nav-item">
                 <a routerLink="/settings" class="nav-link">Settings</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/dashboard" class="nav-link">Dashboard</a>
             </li>
             <!-- <li *ngIf="isLoggedIn" class="nav-item">
                 <a href="#" (click)="onLogoutClick()" class="nav-link">Logout</a>
