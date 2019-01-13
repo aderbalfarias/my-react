@@ -8,6 +8,7 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { SettingsService } from './services/settings.service';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
     declarations: [
@@ -15,7 +16,8 @@ import { HomeComponent } from './components/home/home.component';
         NavbarComponent,
         SettingsComponent,
         DashboardComponent,
-        HomeComponent
+        HomeComponent,
+        NotFoundComponent
     ],
     imports: [
         BrowserModule,
