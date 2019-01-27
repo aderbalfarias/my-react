@@ -10,6 +10,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { SigninComponent } from './components/auth/signin/signin.component';
+import { SignupComponent } from './components/auth/signup/signup.component';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
     declarations: [
@@ -19,13 +22,18 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
         DashboardComponent,
         HomeComponent,
         LoginComponent,
-        NotFoundComponent
+        NotFoundComponent,
+        SigninComponent,
+        SignupComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule
     ],
-    providers: [SettingsService],
+    providers: [
+        SettingsService, 
+        AuthService
+    ],
     bootstrap: [AppComponent]
 })
 
