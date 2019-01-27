@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SettingsService } from '../../services/settings.service';
-import { Settings } from '../../models/Settings';
+import { Settings } from '../../models/settings';
 
 @Component({
     selector: 'app-settings',
