@@ -28,6 +28,12 @@
             <!-- <li *ngIf="isLoggedIn" class="nav-item">
                 <a href="#" (click)="onLogoutClick()" class="nav-link">Logout</a>
             </li> -->
+            <li *ngIf="isLoggedIn" class="nav-item">
+                <a routerLink="/signup" class="nav-link">Sign Up</a>
+            </li>
+            <li *ngIf="isLoggedIn" class="nav-item">
+                <a routerLink="/signin" class="nav-link">Sign In</a>
+            </li>
         </ul>
         </div>
     </div>
