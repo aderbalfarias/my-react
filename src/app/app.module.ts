@@ -10,7 +10,6 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { SettingsService } from './services/settings.service';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
-import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SigninComponent } from './components/auth/signin/signin.component';
 import { SignupComponent } from './components/auth/signup/signup.component';
@@ -23,7 +22,6 @@ import { AuthService } from './services/auth.service';
         SettingsComponent,
         DashboardComponent,
         HomeComponent,
-        LoginComponent,
         NotFoundComponent,
         SigninComponent,
         SignupComponent
