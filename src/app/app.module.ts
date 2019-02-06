@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +12,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AboutComponent } from './components/about/about.component';
+import { SigninComponent } from './components/auth/signin/signin.component';
+import { SignupComponent } from './components/auth/signup/signup.component';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
     declarations: [
@@ -20,12 +25,19 @@ import { AboutComponent } from './components/about/about.component';
         HomeComponent,
         NotFoundComponent,
         AboutComponent
+        SigninComponent,
+        SignupComponent
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule
+        AppRoutingModule,
+        FormsModule,
+        ReactiveFormsModule
     ],
-    providers: [SettingsService],
+    providers: [
+        SettingsService, 
+        AuthService
+    ],
     bootstrap: [AppComponent]
 })
 
