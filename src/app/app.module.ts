@@ -24,7 +24,7 @@ import { AuthService } from './services/auth.service';
         DashboardComponent,
         HomeComponent,
         NotFoundComponent,
-        AboutComponent
+        AboutComponent,
         SigninComponent,
         SignupComponent
     ],
