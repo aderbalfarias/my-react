@@ -7,14 +7,14 @@ export class AuthService {
 
     constructor(private router: Router) { }
 
-    signupUser(email: string, password: string) {
+    signUpUser(fistname: string, lastname: string, email: string, password: string) {
         // firebase.auth().createUserWithEmailAndPassword(email, password)
         //     .catch(
         //         error => console.log(error)
         //     )
     }
 
-    signinUser(email: string, password: string) {
+    signInUser(email: string, password: string) {
         // firebase.auth().signInWithEmailAndPassword(email, password)
         //     .then(
         //         response => {
