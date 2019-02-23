@@ -19,6 +19,6 @@ export class SignupComponent implements OnInit {
         const lastname = form.value.lastname;
         const email = form.value.email;
         const password = form.value.password;
-        this.authService.signupUser(email, password);
+        this.authService.signUpUser(firstname, lastname, email, password);
     }
 }
